@@ -72,11 +72,16 @@ crée une grosse zone de cellules vivates. Toutes ces actions précédentes peuv
 
 ## Fonctions notables
 
-En plus des descriptions directements implémentés dans pythons, voici quelques fonctions notables : 
-
-``game.py#verify_win(self, player)`` Qui prend en paramètre le joueur qui a posé le dernier jeton, et qui renvoie un boolean : si il a gagné ou non.
-``app.py#handle_playing(data_)`` Qui prend en paramètre les donnée reçu du client, cette fonction s'execute lorsque le joueur clique sur une case depuis son navigateur.
-``app.py#home()`` Fonction initial, elle est executé lorsque un joueur se connecte sur la page web principale
+Il existe différentes fonctions essetielles au bon fonctionnement du projet qui sont dans les différents fichiers python :
+``` 
+Mytools
+```
+```
+Controlleur
+```
+```
+Vue_fromUI
+```
 
 ## Installation
 Le projet requière Python en version 3.10.2
