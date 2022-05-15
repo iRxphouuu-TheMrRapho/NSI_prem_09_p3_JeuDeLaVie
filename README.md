@@ -10,6 +10,8 @@ Tout le code de base a été imaginé par Monsieur Pioche. Des fonctions ou des 
 
 ## Répartition des Taches
 
+La répartition des tâches pour le projet est la suivante : 
+```
 La recherche et l'établissement du cachier des charges : Gabriel et Raphaël
 Différentes règles du jeu de la vie : Raphaël
 ...
@@ -20,6 +22,7 @@ Différentes règles du jeu de la vie : Raphaël
 ...
 ...
 ...
+```
 
 ## Etapes de Réalisations
 
