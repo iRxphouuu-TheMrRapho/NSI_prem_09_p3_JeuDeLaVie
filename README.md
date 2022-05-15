@@ -80,12 +80,17 @@ En plus des descriptions directements implémentés dans pythons, voici quelques
 
 ## Installation
 Le projet requière Python en version 3.10.2
-Le projet requiere les différentes dépendencies suivantes : 
+Le projet requiere les différentes librairies suivantes : 
 ```
-simple-web-socket (version 0.5.1)
-flask (version 2.0.3)
-flask-socketio (version 5.1.1)
-markupsafe (version 2.1.0)
-random (version compatible avec Python 3.10.2)
+os (avec listdir)
+sys
+time
+threading
+PyQt5 (avec QtCOre, QtWidgets, QtGui)
+PyQt5.QtCore (avec QObject, QThread, pyqtSignal, QCoreApplication, QRunnable, QThreadPool)
+PyQt5.QtGui (QIcon, QPixmap)
+random
+json
+os.path (avec isfile, join)
 ```
 Après avoir executé le fichier nommé ``app.py``, suivez les instructions et cliquer sur le lien affiché sur la console.
