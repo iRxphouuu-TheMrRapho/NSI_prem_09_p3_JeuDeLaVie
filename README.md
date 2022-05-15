@@ -1,1 +1,68 @@
-# NSI_prem_09_p3_JeuDeLaVie
+# Jeu de la vie
+
+Ce projet est un Jeu de la vie créé par Gabriel et Raphaël et conçu initialement par Monsieur Pioche (https://github.com/jimpioche)
+
+Ce projet est un Jeu de la vie dont les règles ont été revues par Gabriel et Raphaël. Le Jeu de la vie est au automate cellulaire imaginé par John Horton Conway en 1970. Malgré des règles qui paraissent simples au premier regard, il est "Turing-complet". C'est un jeu de de simulation au sens mathématiques. Le jeu de la vie peut être qualifié de jeu à zéro joueur car il ne nécessite aucune intervention lors de son déroulement. Il s'agit d'un automate cellulaire, un modèle où chaque état conduit mécaniquement à l'état suivant à partir de règles préétablies.
+
+Le principe est simple, lorsque le joueur lance le jeu, il peut dessiner ce qu'il souhaite dans la grille où importer un "schematic" pré-existant. Lorsque le joueur est satisafait de sa création, il n'a plus qu'à lancer le jeu en appuyant sur le bouton "Play", ce qui lance le jeu de la vie. A partir de là, il peut obsever l'évolution de sa création initiale. Il peut mettre le jeu sur pause, revenir en arrière ou en avant, et lorsque le jeu est en pause, ajouter ou supprmer des cellules, et le tout, à sa guise. A la fin de la simulation, l'utilisateur peut voir deux choses différentes : Les cellules se sont toutes stabilisées et plus aucune évolution interne au jeu n'est possible (sans que le joueur ne rajoute d'autres cellules), ou toutes les cellules sont mortes, et il n'y en a donc plus sur la grille, et dans ce cas là, à moins d'une intervention de l'utilisateur, il n'y a plus d'évolution possible.
+
+Tout le code de base a été imaginé par Monsieur Pioche. Des fonctions ou des modifications des règles du jeu de la vie on été rajoutées par la suite
+
+## Répartition des Taches
+
+
+
+## Etapes de Réalisations
+
+Dans un premier temps, nous nous sommes familiarisés avec le jeu de la vie. Sans modifier les règles de vies ou de mort, nous avons appris à générer des figures à des endroits précis en lançant le jeu. Cette familiarisation nous a permis de mieux comprendre comment le jeu, ainsi que le code fonctionnaient, et nous avons donc pu établir un cahier des charges.
+
+Ce cachier des charges a évoulué tout au long du projet, selon notre avancement, et ce qui était possible de faire ou ne pas faire avec les moyens mis à notre disposition et le temps accordé au projet.
+Ainsi le cahier des charges comportes deux grandes parties : une partie "ajouts" et une partie "modifications".
+Dans la partie ajout nous avions pour ambition d'ajouter plusieurs choses : différentes couleurs pour les cellules vivantes (en cours),
+un fonction permettant de déplacer le schématic une fois importer via des touches (flèches directionnelles par exemple) (idée abandonnée),
+pouvoir exporter le contenu de la grille en .png (photo) et .mp4 (vidéo) (idées abandonnées).
+Association d'une cellule et d'une note de musique. Lorsqu'une cellule vient de naître, cette dernière émet un son. Tout les sons sont enregistrés puis tout est convertit chronologiquement dans un fichier mp3.
+Ajout d'une durée de vie limitée pour chaque cellule (en cours)
+Ajout de différentes règles du jeu de la vie. (en cours)
+Ajout de différents "mode de jeu" (en cours)
+
+Dans la partie modification, nous avions pour ambition de transformer le menu déroulant des schematics en un nouvel onglet qui s'ouvre comportant le nom du schematics et un screenshot. (abandonné / en cours)
+
+Lors de la réalisation du projet nous avons tout fait de façon désordée en avançant à l'aveuglette dans ce que nous faisions. 
+
+
+## Fonctionnement de l'interface graphique
+
+Bouton Play : lance le jeu 
+Bouton Pause : coupe le jeu
+Flèches allant vers la gauche ou la droite : permet de load la scène précédente / suivante.
+Couper : Coupe la sélection
+Coller : Colle la sélection
+Copier : Copie la sélection
+Reset : Nettoie toute la grille pour la remettre à un état immaculée (sans cellule)
+Quitter : Quitte le jeu
+Menu déroulant le plus à gauche : load un schematic
+Bouton + : save le schematic
+Menu déroulant plus à droite sur la même ligne : permet de choisir une règle du jeu de la vie. 
+Grille (à l'arrêt) : clique gauche place une cellule; flèches directionnelles : à la manière du snake, crée une ligne de cellules vivantes. Sélectionner (clique gauche en laissant appuyer puis en bougeant le curseur) : crée une grosse zone de cellules vivates. Toutes ces actions précédentes peuvent aussi servir à faire le contraire (tuer la cellule)
+
+
+## Fonctions notables
+
+En plus des descriptions directements implémentés dans pythons, voici quelques fonctions notables : 
+
+``game.py#verify_win(self, player)`` Qui prend en paramètre le joueur qui a posé le dernier jeton, et qui renvoie un boolean : si il a gagné ou non.
+``app.py#handle_playing(data_)`` Qui prend en paramètre les donnée reçu du client, cette fonction s'execute lorsque le joueur clique sur une case depuis son navigateur.
+``app.py#home()`` Fonction initial, elle est executé lorsque un joueur se connecte sur la page web principale
+
+## Installation
+Le projet requière Python en version 3.10.2
+Le projet requiere les différentes dépendencies suivantes : 
+```
+simple-web-socket (version 0.5.1)
+flask (version 2.0.3)
+flask-socketio (version 5.1.1)
+markupsafe (version 2.1.0)
+random (version compatible avec Python 3.10.2)
+```
+Après avoir executé le fichier nommé ``app.py``, suivez les instructions et cliquer sur le lien affiché sur la console.
