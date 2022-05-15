@@ -30,21 +30,29 @@ Dans un premier temps, nous nous sommes familiarisés avec le jeu de la vie. San
 
 Ce cachier des charges a évoulué tout au long du projet, selon notre avancement, et ce qui était possible de faire ou ne pas faire avec les moyens mis à notre disposition et le temps accordé au projet.
 Ainsi le cahier des charges comportes deux grandes parties : une partie "ajouts" et une partie "modifications".
-Dans la partie ajout nous avions pour ambition d'ajouter plusieurs choses : différentes couleurs pour les cellules vivantes (en cours),
-un fonction permettant de déplacer le schématic une fois importer via des touches (flèches directionnelles par exemple) (idée abandonnée),
+```
+Dans la partie ajout nous avions pour ambition d'ajouter plusieurs choses : différentes couleurs pour les cellules vivantes 
+(en cours),
+Un fonction permettant de déplacer le schématic une fois importer via des touches 
+(flèches directionnelles par exemple) (idée abandonnée),
 pouvoir exporter le contenu de la grille en .png (photo) et .mp4 (vidéo) (idées abandonnées).
-Association d'une cellule et d'une note de musique. Lorsqu'une cellule vient de naître, cette dernière émet un son. Tout les sons sont enregistrés puis tout est convertit chronologiquement dans un fichier mp3.
+Association d'une cellule et d'une note de musique. Lorsqu'une cellule vient de naître, cette dernière 
+émet un son. 
+Tout les sons sont enregistrés puis tout est convertit chronologiquement dans un fichier mp3.
 Ajout d'une durée de vie limitée pour chaque cellule (en cours)
 Ajout de différentes règles du jeu de la vie. (en cours)
 Ajout de différents "mode de jeu" (en cours)
-
-Dans la partie modification, nous avions pour ambition de transformer le menu déroulant des schematics en un nouvel onglet qui s'ouvre comportant le nom du schematics et un screenshot. (abandonné / en cours)
-
+```
+Dans la partie modification, nous avions pour ambition de  :
+```
+transformer le menu déroulant des schematics en un nouvel onglet qui s'ouvre comportant le nom du schematics et un screenshot. (abandonné / en cours)
+```
 Lors de la réalisation du projet nous avons tout fait de façon désordée en avançant à l'aveuglette dans ce que nous faisions. 
 
 
 ## Fonctionnement de l'interface graphique
-
+Voici les différetes fonctions de l'interface graphique :
+```
 Bouton Play : lance le jeu 
 Bouton Pause : coupe le jeu
 Flèches allant vers la gauche ou la droite : permet de load la scène précédente / suivante.
@@ -56,8 +64,11 @@ Quitter : Quitte le jeu
 Menu déroulant le plus à gauche : load un schematic
 Bouton + : save le schematic
 Menu déroulant plus à droite sur la même ligne : permet de choisir une règle du jeu de la vie. 
-Grille (à l'arrêt) : clique gauche place une cellule; flèches directionnelles : à la manière du snake, crée une ligne de cellules vivantes. Sélectionner (clique gauche en laissant appuyer puis en bougeant le curseur) : crée une grosse zone de cellules vivates. Toutes ces actions précédentes peuvent aussi servir à faire le contraire (tuer la cellule)
-
+Grille (à l'arrêt) : clique gauche place une cellule; flèches directionnelles : à la manière du snake, 
+crée une ligne de cellules vivantes. Sélectionner (clique gauche en laissant appuyer puis en bougeant le curseur) : 
+crée une grosse zone de cellules vivates. Toutes ces actions précédentes peuvent aussi servir à faire le contraire 
+(tuer la cellule)
+```
 
 ## Fonctions notables
 
