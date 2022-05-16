@@ -90,17 +90,124 @@ def apply_game_of_life_rules (grid):
 #                next_cases [i] [j] = kill_case (next_cases [i] [j])
 #            else:
 #                next_cases [i] [j] = cases [i] [j]
+#JE SAIS PAS 1
+#            if nbre_alive_voisins == 1:
+#                next_cases [i] [j] = revive_case (next_cases [i] [j])
+#            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 2:
+#                next_cases [i] [j] = kill_case (next_cases [i] [j])
+#            else:
+#                next_cases [i] [j] = cases [i] [j]
+#JE SAIS PAS 2
+#Jeu de la vie classique
+#            if nbre_alive_voisins == 3:
+#                next_cases [i] [j] = revive_case (next_cases [i] [j])
+#            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 4:
+#                next_cases [i] [j] = kill_case (next_cases [i] [j])
+#            else:
+#                next_cases [i] [j] = cases [i] [j]
+#Damier symétrique
+#            if nbre_alive_voisins == 1:
+#                next_cases [i] [j] = revive_case (next_cases [i] [j])
+#            elif nbre_alive_voisins <= 2 or nbre_alive_voisins >= 5:
+#                next_cases [i] [j] = kill_case (next_cases [i] [j])
+#            else:
+#                next_cases [i] [j] = cases [i] [j]
+#Petits carrés qui vont et s'en vont rapidement
+#            if nbre_alive_voisins == 1:
+#                next_cases [i] [j] = revive_case (next_cases [i] [j])
+#            elif nbre_alive_voisins <= 3 or nbre_alive_voisins >= 4:
+#                next_cases [i] [j] = kill_case (next_cases [i] [j])
+#            else:
+#                next_cases [i] [j] = cases [i] [j]
+#Expension guidée symétrique
+#            if nbre_alive_voisins == 2:
+#                next_cases [i] [j] = revive_case (next_cases [i] [j])
+#            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 4:
+#                next_cases [i] [j] = kill_case (next_cases [i] [j])
+#            else:
+#                next_cases [i] [j] = cases [i] [j]
+#Videur puis défomeur de carrés
+#            if nbre_alive_voisins == 4:
+#                next_cases [i] [j] = revive_case (next_cases [i] [j])
+#            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 6:
+#                next_cases [i] [j] = kill_case (next_cases [i] [j])
+#            else:
+#                next_cases [i] [j] = cases [i] [j]
+#FAIT LABYRINTHE
+#            if nbre_alive_voisins == 1:
+#                next_cases [i] [j] = revive_case (next_cases [i] [j])
+#           elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 4:
+#                next_cases [i] [j] = kill_case (next_cases [i] [j])
+#            else:
+#                next_cases [i] [j] = cases [i] [j]
+#
+#    return next_grid
 
-            if nbre_alive_voisins == 1:
-                next_cases [i] [j] = revive_case (next_cases [i] [j])
-            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 2:
-                next_cases [i] [j] = kill_case (next_cases [i] [j])
-            else:
-                next_cases [i] [j] = cases [i] [j]
-
-    return next_grid
-
-
+def apply_game_of_life_rules (grid):
+    previous_grid = grid
+    previous_cases = previous_grid.cases
+    cases = grid.cases # cases is a list of lists of dictionnaries
+    next_grid = Grid (len (cases))
+    next_cases = next_grid.cases
+    for i in range (1, len (cases) - 1):
+        for j in range (1, len (cases) - 1):
+            previous_status = cases [i][j]['s']
+            voisins = get_voisins (cases, i, j)
+            nbre_alive_voisins = count_alive_voisins (voisins)
+            #FAIT UN LABYRINTHE
+            #if nbre_alive_voisins == 1:
+            #    next_cases [i] [j] = revive_case (next_cases [i] [j])
+            #elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 4:
+            #   next_cases [i] [j] = kill_case (next_cases [i] [j])
+            #else:
+            #    next_cases [i] [j] = cases [i] [j]
+    #return next_grid
+            #CARRE
+##            if nbre_alive_voisins == 2:
+##                next_cases [i] [j] = revive_case (next_cases [i] [j])
+##            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 5:
+##               next_cases [i] [j] = kill_case (next_cases [i] [j])
+##            else:
+##               next_cases [i] [j] = cases [i] [j]
+##    return next_grid
+#TRUC DROGUE
+    #        if nbre_alive_voisins == 2:
+    #            next_cases [i] [j] = revive_case (next_cases [i] [j])
+    #        elif nbre_alive_voisins <= 3 or nbre_alive_voisins >= 7:
+    #           next_cases [i] [j] = kill_case (next_cases [i] [j])
+    #        else:
+    #            next_cases [i] [j] = cases [i] [j]
+    #return next_grid
+#CLIGNOTANT SYM
+            #if nbre_alive_voisins == 1:
+            #   next_cases [i] [j] = revive_case (next_cases [i] [j])
+            #elif nbre_alive_voisins <= 0 or nbre_alive_voisins >= 3:
+            #   next_cases [i] [j] = kill_case (next_cases [i] [j])
+            #else:
+            #   next_cases [i] [j] = cases [i] [j]
+    #return next_grid
+            #if nbre_alive_voisins == 0:
+            #    next_cases [i] [j] = revive_case (next_cases [i] [j])
+            #elif nbre_alive_voisins < 0 or nbre_alive_voisins >= 5:
+            #   next_cases [i] [j] = kill_case (next_cases [i] [j])
+            #else:
+            #   next_cases [i] [j] = cases [i] [j]
+    #return next_grid
+            #if nbre_alive_voisins == 2:
+            #    next_cases [i] [j] = revive_case (next_cases [i] [j])
+            #elif nbre_alive_voisins < -1 or nbre_alive_voisins >= 8:
+            #   next_cases [i] [j] = kill_case (next_cases [i] [j])
+            #else:
+            #   next_cases [i] [j] = cases [i] [j]
+    #return next_grid
+#GIGA CLIGNOTANT
+            #if nbre_alive_voisins == 0:
+            #    next_cases [i] [j] = revive_case (next_cases [i] [j])
+            #elif nbre_alive_voisins <= 10 or nbre_alive_voisins >= 50:
+            #   next_cases [i] [j] = kill_case (next_cases [i] [j])
+            #else:
+            #   next_cases [i] [j] = cases [i] [j]
+    #return next_grid
 
 def apply_rules (grid, cpt):
     # if (cpt  + 1) % 20 != 0:
