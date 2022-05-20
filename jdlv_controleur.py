@@ -185,7 +185,7 @@ class Ctrl_vue ():
                                  figures_de_base_items, self.vue.ui.cb_figures_de_base)
         else:
             pass
-        
+
     def action_signal_update_vue_emited (self):
         #print ("updating the view !!!!!!")
         self.vue.update (self.next_grid)
@@ -280,7 +280,7 @@ class Ctrl_vue ():
             self.vue.current_grid_size = len (self.vue.grid.cases)
             current_tablew_size = self.vue.ui.tablew_grid.columnCount ()
             #print ("self.vue.current_grid_size = " + str (self.vue.current_grid_size))
-            #print ("current_tablew_size = " + str (current_tablew_size))       
+            #print ("current_tablew_size = " + str (current_tablew_size))
             if self.vue.current_grid_size > current_tablew_size:
                 adapter_affichage_du_tablewidget (self.vue.ui.tablew_grid, \
                                                               horizontal_tablew_headers, \
@@ -305,6 +305,11 @@ class Ctrl_vue ():
         sys.exit (0)
 
     def action_cb_figures_de_base__currentIndexChanged (self):
+        currentText = self.vue.ui.cb_figures_de_base.currentText ()
+        self.fname = self.vue.default_input_dir_name + "/" + currentText
+        self.load_file (self.fname)
+
+    def action_cb_regles_dv__currentIndexChanged (self):
         currentText = self.vue.ui.cb_figures_de_base.currentText ()
         self.fname = self.vue.default_input_dir_name + "/" + currentText
         self.load_file (self.fname)
@@ -407,5 +412,5 @@ class Ctrl_vue ():
                     self.is_erasing = False
         self.vue.update (self.vue.grid)
 
-        
-    
+
+

@@ -37,6 +37,13 @@ class Vue (QtWidgets.QWidget):
         self.set_icon (self.ui.pb_copier, ":/newPrefix/copier.png")
         self.set_icon (self.ui.pb_coller, ":/newPrefix/coller.png")
 
+
+        self.cb_regles_dv = QtWidgets.QComboBox(self.ui.gb_grid)
+        self.cb_regles_dv.setMinimumSize(QtCore.QSize(180, 0))
+        self.cb_regles_dv.setObjectName("cb_regles_dv")
+        self.ui.gridLayout_6.addWidget(self.cb_regles_dv, 0, 5, 1, 1)
+
+
     def add_examples_in_cb_figures_de_bases (self):
         try:
             figures_de_base_names = read_files_in (default_input_dir_name)
