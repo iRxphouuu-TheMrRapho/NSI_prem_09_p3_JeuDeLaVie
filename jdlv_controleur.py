@@ -308,6 +308,7 @@ class Ctrl_vue ():
         currentText = self.vue.ui.cb_figures_de_base.currentText ()
         self.fname = self.vue.default_input_dir_name + "/" + currentText
         self.load_file (self.fname)
+        self.vue.ui.cb_regles.currentTextChanged.connect(manage_rules)
 
     def action_cb_regles_dv__currentIndexChanged (self):
         currentText = self.vue.ui.cb_figures_de_base.currentText ()
