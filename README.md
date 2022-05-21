@@ -31,7 +31,8 @@ Dans un premier temps, nous nous sommes familiarisés avec le jeu de la vie. San
 Ce cachier des charges a évoulué tout au long du projet, selon notre avancement, et ce qui était possible de faire ou ne pas faire avec les moyens mis à notre disposition et le temps accordé au projet.
 Ainsi le cahier des charges comportes deux grandes parties : une partie "ajouts" et une partie "modifications".
 ```
-Dans la partie ajout nous avions pour ambition d'ajouter plusieurs choses : différentes couleurs pour les cellules vivantes 
+Dans la partie ajout nous avions pour ambition d'ajouter plusieurs choses : 
+différentes couleurs pour les cellules vivantes 
 (en cours),
 Un fonction permettant de déplacer le schématic une fois importer via des touches 
 (flèches directionnelles par exemple) (idée abandonnée),
