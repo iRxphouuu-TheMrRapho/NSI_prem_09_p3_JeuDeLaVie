@@ -46,7 +46,8 @@ Ajout de différents "mode de jeu" (en cours)
 ```
 Dans la partie modification, nous avions pour ambition de  :
 ```
-transformer le menu déroulant des schematics en un nouvel onglet qui s'ouvre comportant le nom du schematics et un screenshot. (abandonné / en cours)
+transformer le menu déroulant des schematics en un nouvel onglet qui s'ouvre 
+comportant le nom du schematics et un screenshot. (abandonné / en cours)
 ```
 Lors de la réalisation du projet nous avons tout fait de façon désordée en avançant à l'aveuglette dans ce que nous faisions. 
 
