@@ -15,6 +15,7 @@ from PyQt5.QtWidgets import *
 from jdlv_data import *
 from jdlv_model import *
 from jdlv_outils import *
+#from jdlv_controleur import *
 
 def clean_grid (grid):
     for i in range (default_grid_size):
@@ -408,6 +409,7 @@ def manages_rules(texte):
         apply_game_of_life_rules = R15_rules
     elif texte == "R16":
         apply_game_of_life_rules = R16_rules
+    return apply_game_of_life_rules
 
 
 def apply_rules (grid, cpt):

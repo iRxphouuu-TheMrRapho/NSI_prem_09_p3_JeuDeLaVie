@@ -42,6 +42,9 @@ class Vue (QtWidgets.QWidget):
         self.cb_regles_dv.setMinimumSize(QtCore.QSize(180, 0))
         self.cb_regles_dv.setObjectName("cb_regles_dv")
         self.ui.gridLayout_6.addWidget(self.cb_regles_dv, 0, 5, 1, 1)
+        self.cb_regles_dv.addItems(["R0", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12"\
+        "R13" "R14", "R15", "R16"])
+        self.cb_regles_dv.setCurrentIndex(-1)
 
 
     def add_examples_in_cb_figures_de_bases (self):

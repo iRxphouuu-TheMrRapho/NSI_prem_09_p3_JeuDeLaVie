@@ -77,6 +77,8 @@ class Ctrl_vue ():
         #    self.action_tablew_selectionChanged)
         self.vue.ui.cb_figures_de_base.currentIndexChanged.connect ( \
                         self.action_cb_figures_de_base__currentIndexChanged)
+        self.vue.cb_regles_dv.currentTextChanged.connect( \
+            self.action_cb_regles_dv__currentIndexChanged)
         self.next_grid = None
         self.fname = None
 
@@ -308,12 +310,13 @@ class Ctrl_vue ():
         currentText = self.vue.ui.cb_figures_de_base.currentText ()
         self.fname = self.vue.default_input_dir_name + "/" + currentText
         self.load_file (self.fname)
-        self.vue.ui.cb_regles.currentTextChanged.connect(manage_rules)
 
-    def action_cb_regles_dv__currentIndexChanged (self):
-        currentText = self.vue.ui.cb_figures_de_base.currentText ()
-        self.fname = self.vue.default_input_dir_name + "/" + currentText
-        self.load_file (self.fname)
+
+    def action_cb_regles_dv__currentIndexChanged (self, texte):
+        current_text = self.vue.cb_regles_dv.currentText ()
+        apply_game_of_life_rules = manage_rules(current_text)
+
+
 
     def a_case_is_alive_in_the_selection (self, selected_indexes):
         reponse = False
