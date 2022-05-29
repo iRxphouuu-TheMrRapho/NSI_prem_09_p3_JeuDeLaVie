@@ -69,16 +69,36 @@ crée une grosse zone de cellules vivates. Toutes ces actions précédentes peuv
 ## Fonctions notables
 
 Il existe différentes fonctions essetielles au bon fonctionnement du projet qui sont dans les différents fichiers python :
-``` 
-Mytools
-```
-```
-Controlleur
-```
-```
-Vue_fromUI
-```
 
+jdlv_my_tools
+```
+apply_game_of_life_rules : règles du jeu de la vie : condition
+de vie ou de mort des différentes cellules. Ces règles sont reprises
+et modifiées dans les fonction R0_rules, R1_rules, R2_rules...
+manage_rules : permet de choisir une règles de vie R0, R1, R2 et de 
+l'appliquer à la place de l'apply_game_of_life_rules
+apply_rules : applique les règles de vie
+``` 
+jdlv_main
+```
+Permet de lancer le JEU DE LA VIE !!!! ^^
+``` 
+Jdlv_Vue_fromUI et jdlv_ui 
+```
+Liaisons entre les boutons du controleur et les fonctions
+``` 
+jdlv_controleur
+```
+La création de différents boutons et menus déroulants
+```
+jdlv_data
+```
+La forme de la grille les couleurs, le nombre de cases
+```
+jdlv_outils 
+```
+La couleur aléatoire et d'autres choses
+```
 ## Installation
 Le projet requière Python en version 3.10.2
 Le projet requiere les différentes librairies suivantes : 
