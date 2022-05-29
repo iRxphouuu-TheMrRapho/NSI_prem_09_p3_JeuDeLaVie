@@ -8,10 +8,10 @@ from os.path import isfile, join
 import random
 import json
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import * 
+from PyQt5.QtWidgets import *
 
-from jdlv_data import * 
-from jdlv_model import * 
+from jdlv_data import *
+from jdlv_model import *
 
 def adapter_affichage_du_tablewidget ( \
                                        tablew, \
@@ -43,7 +43,7 @@ def ajouter_items_dans_la_ligne (tablew, num_ligne):
         tablew.blockSignals (True)
         tablew.setItem (num_ligne, j, item)
         tablew.blockSignals (False)
-    
+
 def ajouter_a_la_fin_une_ligne_avec_ses_items (tablew):
     """ ajoute une ligne à la fin du tablewidget de nom tablew """
     nbre_ligne = tablew.rowCount ()
@@ -57,7 +57,7 @@ def add_items_in_combo (list_of_items, combo):
         combo.addItems (list_of_items)
         combo.setCurrentIndex (-1)
         combo.blockSignals (False)
-    
+
 def qmessage_box (title, message):
     msgBox = QMessageBox ()
     msgBox.setStyleSheet("QLabel{min-width: 800px;}")
@@ -105,9 +105,11 @@ def kill_case (case):
     case ["c"] = death_color
     return case
 
+colors = ["red", "blue", "yellow", "pink", "green", "black"]
+
 def revive_case (case):
     case ["s"] = life_status
-    case ["c"] = "red"
+    case ["c"] = colors [random.randint(0, 5)]
     return case
 
 def play_music (historique):
@@ -139,7 +141,7 @@ def set_text_widget (widget, e):
     if e == None:
         widget.setText (None)
     else:
-        widget.setText (str (e))        
+        widget.setText (str (e))
     widget.blockSignals (False)
 
 set_text_line_edit = set_text_widget
