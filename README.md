@@ -14,12 +14,9 @@ La répartition des tâches pour le projet est la suivante :
 ```
 La recherche et l'établissement du cachier des charges : Gabriel et Raphaël
 Différentes règles du jeu de la vie : Raphaël
-Ajout du menu déroulant de sélection des règles de vie
-...
-...
-...
-...
-...
+Ajout du menu déroulant de sélection des règles de vie : Raphaël et M. Pioche
+Ajout de couleurs aléatoires : Raphaël
+Ajout du chargement de gif par le jeu de la vie : Gabriel
 ...
 ...
 ```
@@ -43,6 +40,7 @@ Tout les sons sont enregistrés puis tout est convertit chronologiquement dans u
 Ajout d'une durée de vie limitée pour chaque cellule (en cours)
 Ajout de différentes règles du jeu de la vie. (en cours)
 Ajout de différents "mode de jeu" (abandonné)
+Prise en compte par le jeu de la vie de gifs (fait)
 ```
 
 Lors de la réalisation du projet nous avons tout fait de façon désordée en avançant à l'aveuglette dans ce que nous faisions. 
