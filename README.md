@@ -33,7 +33,7 @@ Ainsi le cahier des charges comportes deux grandes parties : une partie "ajouts"
 ```
 Dans la partie ajout nous avions pour ambition d'ajouter plusieurs choses : 
 différentes couleurs pour les cellules vivantes 
-(en cours),
+(fait),
 Un fonction permettant de déplacer le schématic une fois importer via des touches 
 (flèches directionnelles par exemple) (idée abandonnée),
 pouvoir exporter le contenu de la grille en .png (photo) et .mp4 (vidéo) (idées abandonnées).
@@ -42,13 +42,9 @@ Association d'une cellule et d'une note de musique. Lorsqu'une cellule vient de 
 Tout les sons sont enregistrés puis tout est convertit chronologiquement dans un fichier mp3.
 Ajout d'une durée de vie limitée pour chaque cellule (en cours)
 Ajout de différentes règles du jeu de la vie. (en cours)
-Ajout de différents "mode de jeu" (en cours)
+Ajout de différents "mode de jeu" (abandonné)
 ```
-Dans la partie modification, nous avions pour ambition de  :
-```
-transformer le menu déroulant des schematics en un nouvel onglet qui s'ouvre 
-comportant le nom du schematics et un screenshot. (abandonné / en cours)
-```
+
 Lors de la réalisation du projet nous avons tout fait de façon désordée en avançant à l'aveuglette dans ce que nous faisions. 
 
 
