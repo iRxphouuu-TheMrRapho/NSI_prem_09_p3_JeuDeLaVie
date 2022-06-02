@@ -150,6 +150,8 @@ def apply_game_of_life_rules (grid):
 #                next_cases [i] [j] = cases [i] [j]
 #    return next_grid
 #
+#
+#
 #            if nbre_alive_voisins == 1:
 #                next_cases [i] [j] = revive_case (next_cases [i] [j])
 #            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 2:
@@ -198,13 +200,18 @@ def apply_game_of_life_rules (grid):
 #                next_cases [i] [j] = cases [i] [j]
 #    return next_grid
 #
+
+
+
 #            if nbre_alive_voisins == 2:
 #                next_cases [i] [j] = revive_case (next_cases [i] [j])
-#           elif nbre_alive_voisins < -1 or nbre_alive_voisins >= 8:
+#            elif nbre_alive_voisins < -1 or nbre_alive_voisins >= 8:
 #                next_cases [i] [j] = kill_case (next_cases [i] [j])
 #            else:
 #                next_cases [i] [j] = cases [i] [j]
 #    return next_grid
+#
+#
 #
 #            if nbre_alive_voisins == 1:
 #                next_cases [i] [j] = revive_case (next_cases [i] [j])
@@ -222,6 +229,9 @@ def apply_game_of_life_rules (grid):
 #                next_cases [i] [j] = cases [i] [j]
 #   return next_grid
 #
+
+
+
 #            if nbre_alive_voisins == 1:
 #                next_cases [i] [j] = revive_case (next_cases [i] [j])
 #            elif nbre_alive_voisins <= 1 or nbre_alive_voisins >= 4:
@@ -229,6 +239,9 @@ def apply_game_of_life_rules (grid):
 #            else:
 #                next_cases [i] [j] = cases [i] [j]
 #    return next_grid
+
+
+
 #
 #           if nbre_alive_voisins == 2:
 #                next_cases [i] [j] = revive_case (next_cases [i] [j])
